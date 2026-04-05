@@ -14,7 +14,6 @@ class UrlData(BaseModel):
 print(UrlData({
     "original_url":"str",
 }))
-# print(UrlData("string", "nestring"))
 
 app = FastAPI()
 
