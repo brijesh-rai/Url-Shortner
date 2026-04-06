@@ -9,6 +9,6 @@ class URL(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     original_url = Column(String, nullable=False)
-    short_url = Column(String, unique=True, index=True)
+    short_url_code = Column(String, unique=True, index=True)
     created_at = Column(DateTime, default=datetime.utcnow)
-    expires_at = Column(DateTime, default=datetime.utcnow)
+    expires_at = Column(DateTime, nullable=False)
